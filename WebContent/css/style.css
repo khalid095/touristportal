@@ -1,0 +1,20 @@
+body
+{
+background-color: grey;	
+}
+
+a:link{
+	color:red;
+}
+a:VISITED{
+	color:yellow;
+}
+a:HOVER{
+	color:white;
+}
+a:ACTIVE{
+	color:blue;
+}
+a{
+	text-decoration: none;
+}

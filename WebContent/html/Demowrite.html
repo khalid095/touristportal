@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function call()
+{
+	
+	//document.write("hello javascript");
+	var ms=document.getElementById("msg");
+	ms.innerHTML="hollo java";
+	
+	var name=prompt("enter your name");
+	var nm="<b><i>"+name+"</i></b>";
+	document.getElementById("div1").innerHTML=nm;
+}
+
+
+
+
+</script>
+</head>
+<body bgcolor="green">
+<button onclick="call()">write</button>
+<h3 id="msg" style="color: red;text-align: center;"></h3>
+<div id="div1" style="width: 40%;height: 100%;background-color: yellow">
+
+
+</div>
+</body>
+</html>

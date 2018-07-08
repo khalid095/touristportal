@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>transport</title>
+<script type="text/javascript">
+function show(pagename)
+{
+	var url="/touristportal/html/"
+	window.location.href=url+pagename;
+	}
+function callme(name)
+{
+	var name=prompt("enter your Name please")
+	alert("hello"+name+"Tourist portal welcome you!!!");
+	}
+
+</script>
+</head>
+<body>
+<select id="cmd" onchange="show(this.value)">
+<option value="def">select Transport</option>
+<option value="Metro.html">Metro</option>
+<option value="Cab">Cab</option>
+<option value="Bus">Bus</option>
+</select>
+
+<a href="javascript:callme('scoot')">greet</a>
+
+
+
+
+</body>
+</html>

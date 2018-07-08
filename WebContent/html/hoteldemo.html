@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Hotels</title>
+<script type="text/javascript">
+	//alert("hello user");
+	/*function welcome() {
+		alert("hello user");
+	}
+	function bye() {
+		alert("good bye");
+	}*/
+	//onload="welcome()" onunload="bye()"
+	function changeImage()
+	{
+		var im=document.getElementById("img1");
+		im.src="/touristportal/images/hjh.jpg";
+		im.style="width: 100px; height: 100px";
+	}
+	function rollImage()
+	{
+		var im=document.getElementById("img1");
+		im.src="/touristportal/images/gyy.jpg";
+		im.style="width: 100px; height: 100px";
+	}
+	function show()
+	{
+		var d=document.getElementById("div 1");
+		d.style.display="block";
+	}
+	function hide()
+	{
+		var d=document.getElementById("div 1");
+		d.style.display="none";
+	}
+</script>
+</head>
+<body>
+	<img src="/touristportal/images/gyy.jpg"
+		style="width: 100px; height: 100px" id="img1" onmouseover="changeImage()" onmouseout="rollImage()" >
+
+		<table>
+		<tr><td><Button type="button" onclick="show()">View Hotels</Button></td>
+		<td><Button type="button" onclick="hide()">Close description</Button></td></tr>
+		</table>
+		<div id="div 1" style="display:none">
+		<table>
+		<tr><td><img src="/touristportal/images/faluknama.jpg" style="width:100px; height:100px"></td>
+	    <td><img src="/touristportal/images/indian_hotel_banner.jpg"  style="width:100px; height:100px"></td></tr>
+		<tr><td><img src="/touristportal/images/imambada.jpg"  style="width:100px; height:100px"></td>
+		<td><img src="/touristportal/images/hjh.jpg"  style="width:100px; height:100px"></td></tr>
+		</table>
+		</div>
+</body>
+</html>

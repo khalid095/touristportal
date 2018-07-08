@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>multiplicationtable</title>
+<script>
+function call() 
+{
+	var num=prompt("enter number");
+	var tb="<table border=2>"
+		var tb1="</table>"
+	var i=0;
+		var data="";
+	for(i=1;i<=10;i++)
+		{
+		data=data+"<tr><td>"+num+"</td><td>*</td><td>"+i+"</td><td>=</td><td>"+num*i+"</td></tr>";
+	
+		}
+	
+
+	document.getElementById("div1").innerHTML=tb+data+tb1;
+}
+
+</script>
+</head>
+<body>
+<div id="div1" style="width: 600px;height: 400px;background-color: cyan;float: left;margin-left: 400px">
+<h1 style="color: red;font-size: 25px;text-align: center">MULTIPLICATION TABLE</h1>
+
+<button  onclick="call()" >show table</button>
+</div>
+</body>
+</html>

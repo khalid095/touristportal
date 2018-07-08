@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="/touristportal/bootfiles/jquery-3.1.1.min.js"></script>
+
+<script>
+$(document).ready(function()
+{
+	$("#btnhide").click(function()
+			{
+		$("#p1").hide(1000);
+			})
+$("#btnshow").click(function()
+		{
+	$("#p1").show(1000);
+		})
+		$("#Div1").click(function()
+				{
+			$("#Div2").slideToggle(1000);
+				})
+});
+
+
+
+
+
+
+</script>
+</head>
+<body>
+<button id="btnhide">hide</button>
+<button id="btnshow">show</button>
+<p id="p1">this is jquery page.</p>
+<div style="width: 60%;height: 85px;background-color: yellow" id="Div1"></div>
+<div style="width: 60%;height: 500px;background-color: red;display: none" id="Div2">
+</div>
+</body>
+</html>
